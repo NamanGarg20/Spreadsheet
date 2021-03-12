@@ -1,5 +1,5 @@
 {
-  "name": "prj5-sol",
+  "name": "Spreadsheet",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -16,7 +16,6 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
-    "cs544-ss": "file:cs544-ss",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
