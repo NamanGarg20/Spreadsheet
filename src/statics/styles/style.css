@@ -1,0 +1,98 @@
+:root {
+  --base-color: 0, 0, 192;
+  --color09: rgb(var(--base-color));
+  --color01: rgba(var(--base-color), 0.05);
+  --color02: rgba(var(--base-color), 0.1);
+  --color03: rgba(var(--base-color), 0.15);
+  --color04: rgba(var(--base-color), 0.3);
+  --ssColor: lightcyan;
+  --sepColor: gray;
+  --copiedColor: green;
+  --max-width: 600px;
+}
+
+body {
+  color: var(--color09);
+  background-color: var(--color01);
+  max-width: var(--max-width);
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.ss {
+  margin: 10px;
+  border-collapse: collapse;
+}
+
+.ss td,
+.ss th {
+  background-color: var(--ssColor);
+  min-width: 50px;
+  pointer: default;
+}
+
+.ss td {
+  border: 1px solid var(--sepColor);
+  text-align: right;
+}
+
+.ss td.copied {
+  border: 3px solid var(--copiedColor);
+}
+
+.ss td.focused {
+  background-color: var(--color02);
+}
+
+.ss th {
+  border: 3px solid var(--sepColor);;
+  font-weight: bold;
+  text-align: center;
+}
+
+form {
+  margin-top: 20pt;
+  padding: 10px;
+  background-color: var(--color03);
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-gap: 1vw;
+}
+
+
+input[type="radio"] {
+  width: 5%;
+}
+
+input[type="submit"] {
+  background-color: var(--color02);
+  color: var(--color09);
+  font-weight: bold;
+  border-radius: 5pt;
+}
+
+input, select {
+  width: 50%;
+}
+
+label {
+  font-weight: bold;
+  text-align: right;
+}
+
+
+.error {
+  color: red;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+}
+footer li + li::before {
+  content: " | ";
+}
+

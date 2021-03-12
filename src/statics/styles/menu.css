@@ -1,0 +1,39 @@
+
+/* <https://css-tricks.com/snippets/jquery/styled-popup-menu/> */
+.menu {
+  width:100px;
+  margin:0; padding:5px; 
+  background:#fff;
+  color:#333;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  -moz-box-shadow:0 0 5px #999;
+  -webkit-box-shadow:0 0 5px #999;
+  box-shadow:0 0 5px #999
+}
+
+.menu-item {
+  padding:5px;
+  border-bottom: solid 1px #ccc;
+  cursor: pointer;
+}
+
+.menu-item.menu-item-disabled {
+  /* pointer-events: none; */
+  color: #666;
+  font-style: italic;
+  cursor: not-allowed;
+}
+
+.menu-item.menu-item-disabled:active {
+  pointer-events: none;
+}
+.menu-item:not(.menu-item-disabled):hover {
+  background:#EC6603;
+  color:#fff;
+}
+
+.menu-item:last-child {
+  border:none
+}
